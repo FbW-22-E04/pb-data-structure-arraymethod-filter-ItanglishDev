@@ -2,8 +2,8 @@
 //1
 
 function filterRange(arr, a, b) {
-  const filteredArray = arr.filter(num => num >= a && num <= b)
-  return filteredArray
+  const filtered = arr.filter(num => num >= a && num <= b)
+  return filtered
   //write your code here
 }
 
@@ -18,6 +18,8 @@ console.log(arr); // 5,3,8,1 (not modified)
 //Write a function filterRangeInPlace(arr, a, b) that gets an array arr and removes from it all values except those that are between a and b. The test is: a ≤ arr[i] ≤ b.
 //2
 function filterRangeInPlace(arr, a, b) {
+  const arrayNew = arr.filter(num => num >= a && num <= b)
+  console.log(arrayNew);
   //write your code here
 }
 
